@@ -16,6 +16,11 @@
 			border-radius: 8px;
 		}
 
+		<audio id="아드리안">
+            <source src="아드리안.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+          </audio>
+		
 		#dataContainerMotion {
 			font-size: 1.5em;
 		}
@@ -99,8 +104,7 @@
 					var y = event.accelerationIncludingGravity.y;
 					var z = event.accelerationIncludingGravity.z;
 					//var r = event.accelerationIncludingGravity.r;
-                    var audio = new Audio('아드리안.mp3');
-                    audio.play();
+                   document.getElementById("아드리안").play();
 
 
 
