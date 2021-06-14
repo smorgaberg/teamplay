@@ -116,12 +116,19 @@
 					var z = event.accelerationIncludingGravity.z;
 					//var r = event.accelerationIncludingGravity.r;
                   
-					play1();
+				
 
 
 					var html = "x: " +x+ "<br>y: "+y+ "<br>z: " +z;
 					dataContainerMotion.innerHTML = html;
 				}, true);
+			}
+
+			if(ball.style.top > 40){
+				play1();
+
+
+
 			}
 
 		}
