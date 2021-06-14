@@ -48,7 +48,7 @@
 	</style>
 </head>
 <body onload="init()">
-	<audio id="audio1" autoplay>
+	<audio id="audio1">
 		<source src="adrian.mp3" type="audio/mp3">
 	  Your browser does not support the audio element.
 	  </audio>
@@ -103,7 +103,7 @@
 
 					ball.style.top = (maxX*beta/180 + 100) + "px";
 					ball.style.left = (maxY*gamma/180 + 100) + "px";
-					play1();
+					
 
 				}, false);
 			}
@@ -116,7 +116,7 @@
 					var z = event.accelerationIncludingGravity.z;
 					//var r = event.accelerationIncludingGravity.r;
                   
-
+					play1();
 
 
 					var html = "x: " +x+ "<br>y: "+y+ "<br>z: " +z;
