@@ -83,7 +83,8 @@
 			var dataContainerOrientation = document.getElementById('dataContainerOrientation');
 			var dataContainerMotion = document.getElementById('dataContainerMotion');
 			var ball = document.getElementById("ball");
-			var garden = document.getElementById("garden")
+			var garden = document.getElementById("garden");
+var supportsVibrate = "vibrate" in navigator;
 
 			var maxX = garden.clientWidth * 2 - ball.clientWidth;
 			var maxY = garden.clientHeight * 2- ball.clientHeight;
