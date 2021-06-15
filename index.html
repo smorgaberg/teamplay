@@ -85,7 +85,7 @@
 			var ball = document.getElementById("ball");
 			var garden = document.getElementById("garden");
 var supportsVibrate = "vibrate" in navigator;
-
+var vibrateInterval;
 			var maxX = garden.clientWidth * 2 - ball.clientWidth;
 			var maxY = garden.clientHeight * 2- ball.clientHeight;
 			//alert(maxY);
@@ -134,7 +134,7 @@ var supportsVibrate = "vibrate" in navigator;
 						
 						
 				play1();
-				
+				startVibrate(4000);
 
 
 			}
@@ -154,6 +154,10 @@ var supportsVibrate = "vibrate" in navigator;
       }, 10)
 }
 
+		function startVibrate() {
+	navigator.vibrate();
+}
+		
 		
 
 	</script>
