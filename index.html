@@ -76,6 +76,7 @@
 
 
 	<script type="text/javascript">
+var supportsVibrate = "vibrate" in navigator;
 
 
 		function init(){
@@ -88,7 +89,6 @@
 			var maxX = garden.clientWidth * 2 - ball.clientWidth;
 			var maxY = garden.clientHeight * 2- ball.clientHeight;
 			//alert(maxY);
-var supportsVibrate = "vibrate" in navigator;
 
 			//가속도계가 기기의 방향의 변화를 감지 했을때
 			if(window.DeviceOrientationEvent){
@@ -152,7 +152,7 @@ var supportsVibrate = "vibrate" in navigator;
         console.log('your audio is started just now');
       }, 10)
 }
-function startVibrate(a) {
+function startVibrate() {
 	navigator.vibrate();
 		
 
