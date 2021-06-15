@@ -84,8 +84,7 @@
 			var dataContainerMotion = document.getElementById('dataContainerMotion');
 			var ball = document.getElementById("ball");
 			var garden = document.getElementById("garden");
-var supportsVibrate = "vibrate" in navigator;
-var vibrateInterval;
+			var supportsVibrate = "vibrate" in navigator;
 			var maxX = garden.clientWidth * 2 - ball.clientWidth;
 			var maxY = garden.clientHeight * 2- ball.clientHeight;
 			//alert(maxY);
@@ -132,9 +131,9 @@ var vibrateInterval;
 
 					if(y > 5){
 						
-						
+						var a = 400;
 				play1();
-				startVibrate(4000);
+				startVibrate(a);
 
 
 			}
@@ -149,15 +148,12 @@ var vibrateInterval;
     // 기다렸다가 시작 (밀리초)
     setTimeout(function(){
         document.getElementById("audio1").play();
-	navigator.vibrate([500,10,500,10]);
+		window.navigator.vibrate([500,10,500,10]);
         console.log('your audio is started just now');
       }, 10)
 }
-
-		function startVibrate() {
+function startVibrate(a) {
 	navigator.vibrate();
-}
-		
 		
 
 	</script>
