@@ -56,7 +56,7 @@
 </head>
 <body onload="init()">
 	<audio id="audio1">
-		<source src="adrian.mp3" type="audio/mp3">
+		<source src="맨손운동_조형준.mp3" type="audio/mp3">
 	  Your browser does not support the audio element.
 	  </audio>
 
@@ -73,7 +73,15 @@
 	<div id="garden">
 		<div id="ball" class="ball"></div>
 	</div>
-
+	<a href="firework.html"><button class="btn-2"
+		type="button" onclick="pause1()" id="btn" style="display: none;">마지막 페이지</button>
+	<script>
+		var btn=document.getElementById("btn");
+		setTimeout(function() {
+  		btn.style.display='block';
+		}, 10000);
+	</script>
+	</a>
 
 	<script type="text/javascript">
 
@@ -131,7 +139,7 @@
 
 					if(y > 5){
 						
-						
+						var a = 400;
 				play1();
 				startVibrate(a);
 
@@ -148,11 +156,14 @@
     // 기다렸다가 시작 (밀리초)
     setTimeout(function(){
         document.getElementById("audio1").play();
-		navigator.vibrate([500,10,500,10]);
+		window.navigator.vibrate([500,10,500,10]);
         console.log('your audio is started just now');
       }, 10)
 }
-
+function startVibrate(a) {
+	navigator.vibrate();
+		
+}
 	</script>
 
 </body>
