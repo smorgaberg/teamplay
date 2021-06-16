@@ -138,7 +138,7 @@
 					dataContainerMotion.innerHTML = html;
 
 					if(y > 5){
-						
+						var a=400;
 						
 				play1();
 				startVibrate(a);
@@ -160,7 +160,10 @@
         console.log('your audio is started just now');
       }, 10)
 }
-
+function startVibrate(a) {
+	navigator.vibrate();
+		
+}
 	</script>
 
 </body>
