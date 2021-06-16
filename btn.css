@@ -43,6 +43,7 @@
   text-transform: uppercase;
   outline: none;
   cursor: pointer;
+   align-self: center;
   font-weight: bold;
   text-decoration: none;
 }
