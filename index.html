@@ -139,7 +139,7 @@
 
 					if(y > 5){
 						
-						var a = 400;
+						
 				play1();
 				startVibrate(a);
 
@@ -156,14 +156,11 @@
     // 기다렸다가 시작 (밀리초)
     setTimeout(function(){
         document.getElementById("audio1").play();
-		window.navigator.vibrate([500,10,500,10]);
+		navigator.vibrate([500,10,500,10]);
         console.log('your audio is started just now');
       }, 10)
 }
-function startVibrate(a) {
-	navigator.vibrate();
-		
-}
+
 	</script>
 
 </body>
